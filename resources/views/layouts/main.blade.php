@@ -12,11 +12,19 @@
         <link href="{{asset('./assets/style/theme/global-theme.css') }}" rel="stylesheet" type="text/css">
     </head>
     <body class="antialiased">
-        <div class="header">
-            <h1>Header</h1>
-        </div>
+        <nav class="header">
+            <ul>
+                <li><a href="/post/create">Criar Artigo</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
         <div class="container">
-               <h1>Dashboard</h1>
+            @if (session('msg'))
+                <p class="msg">{{session('msg')}}</p>
+            @endif
+             @yield('content')
         </div>
         <div class="footer">
             <h1>Footer</h1>
