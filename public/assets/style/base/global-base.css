@@ -2,17 +2,25 @@ body{
     width: 100vw;
     height: 100vh;
 }
+.container{
+    width: 100%;
+    height: 100%;
+}
 .header{
     width: 100%;
     height: 130px;
+    position: fixed;
+    top: 0;
 }
-.container{
-    width: 100%;
-    height: calc(100% - 390px);
-}
-.container form{
+.body-content{
     width: 100%;
     height: 100%;
+    margin-top: 130px;
+
+}
+.body-content{
+    width: 100%;
+
 }
 .footer{
     width: 100%;

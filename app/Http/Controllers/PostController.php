@@ -24,6 +24,6 @@ class PostController extends Controller
     }
     public function show($id){
         $post = Post::findOrFail($id);
-        return view('layouts.show-post', ['$post' => $post]);
+        return view('layouts.show-post', ['post' => $post]);
     }
 }

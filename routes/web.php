@@ -24,7 +24,7 @@ use Illuminate\Http\Controllers\Post;
 Route::get('/', [App\Http\Controllers\PostController::class, 'index']);
 Route::post('/posts', [App\Http\Controllers\PostController::class, 'store']);
 Route::get('post/create', [App\Http\Controllers\PostController::class, 'create']);
-Route::get('posts/{$id}', [App\Http\Controllers\PostController::class, 'show']);
+Route::get('posts/{id}', [App\Http\Controllers\PostController::class, 'show']);
 
 
 

@@ -11,22 +11,23 @@
         <link href="{{asset('./assets/style/theme/global-theme.css') }}" rel="stylesheet" type="text/css">
     </head>
     <body class="antialiased">
-        <nav class="header">
-            <ul>
-                <li><a href="/post/create">Criar Artigo</a></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-        <div class="container">
-            @if (session('msg'))
-                <p class="msg">{{session('msg')}}</p>
-            @endif
-             @yield('content')
-        </div>
-        <div class="footer">
-            <h1>Footer</h1>
-        </div>
+       <div class="container">
+            <nav class="header">
+                <ul>
+                    <li><a href="/post/create">Criar Artigo</a></li>
+                    <li><a href="/post/create">Criar Artigo</a></li>
+                </ul>
+            </nav>
+            <div class="body-content">
+                <h1>@yield('title')</h1>
+                @if (session('msg'))
+                    <p class="msg">{{session('msg')}}</p>
+                @endif
+                @yield('content')
+            </div>
+            <div class="footer">
+                <p>Blog &copy;</p>
+            </div>
+       </div>
     </body>
 </html>

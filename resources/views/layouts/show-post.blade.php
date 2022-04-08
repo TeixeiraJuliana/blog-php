@@ -2,5 +2,6 @@
 
 
 @section('content')<!--como criar title-->
-<h1>show post</h1>
+@section('title', $post->title)
+<p>{{ $post->description}}</p>
 @endsection

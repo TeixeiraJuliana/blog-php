@@ -1,14 +1,11 @@
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
+
 }
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .header ul{
     display: flex;
@@ -16,11 +13,12 @@
 .header ul li{
     list-style: none;
 }
-.container form{
+.body-content form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 .item{
     display: flex;
