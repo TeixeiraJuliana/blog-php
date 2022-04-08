@@ -9,7 +9,8 @@ class PostController extends Controller
 {
     public function index()
     {
-        return view('dashboard');
+        $posts = Post::all();
+        return view('dashboard', [ 'posts' =>  $posts]);
     }
     public function create()
     {
@@ -22,8 +23,7 @@ class PostController extends Controller
         return Redirect::to('/')->with('msg', 'Artigo criado com sucesso criado com sucesso');
     }
     public function show($id){
-        $post = new Post::findOrFail($id);
-        return view('dashboard', [  'post', $post]);
-
+        $post = Post::findOrFail($id);
+        return view('layouts.show-post', ['$post' => $post]);
     }
 }
