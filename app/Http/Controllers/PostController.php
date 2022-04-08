@@ -26,6 +26,11 @@ class PostController extends Controller
     }
     public function store(Request $request)
     {
+
+        $user = auth()->user();
+        $post->user_id = $user->id;
+
+
         $post = new Post;
         $post = $post->create($request->all());
         return Redirect::to('/')->with('msg', 'Artigo criado com sucesso criado com sucesso');
