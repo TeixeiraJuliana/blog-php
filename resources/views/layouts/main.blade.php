@@ -14,10 +14,27 @@
        <div class="container">
             <nav class="header">
                 <ul>
-                    <li><a href="/post/create">Criar Artigo</a></li>
-                    <li><a href="/post/create">Criar Artigo</a></li>
+                @auth()
+                <li><a href="/post/create">Criar Artigo</a></li>
+                <li><a href="/dashboard">dashboard</a></li>
+                <form action="/logout" method="POST">
+                    @csrf
+                <li>
+                    <a href="/logout"
+                        onclick="event.preventDefault();this.closest('form').submit();">
+                        Sair
+                    </a>
+                </li>
+                </form>
+                @endauth
+                 @guest()
+                 <li><a href="/login">Login</a></li>
+                 <li><a href="/register">Cadastrar</a></li>
+
+                 @endguest
                 </ul>
             </nav>
+            @auth()
             <div class="body-content">
                 <h1>@yield('title')</h1>
                 @if (session('msg'))
@@ -28,6 +45,7 @@
             <div class="footer">
                 <p>Blog &copy;</p>
             </div>
+            @endauth
        </div>
     </body>
 </html>

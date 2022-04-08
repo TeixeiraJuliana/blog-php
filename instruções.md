@@ -16,3 +16,10 @@ https://www.youtube.com/watch?v=qH7rsZBENJo&list=PLnDvRpP8BnewYKI1n2chQrrR4EYiJK
   <div class="m-icons-up-del">
      <a href="posts/{{ $post->id }}"></a>
  </div>
+
+
+composer require laravel/jetstream
+php artisan jetstream:install livewire
+php artisan migrate:status
+npm install
+npm run dev
