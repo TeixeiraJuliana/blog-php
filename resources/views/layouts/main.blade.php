@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{asset('./assets/style/reset/global-base.css') }}" rel="stylesheet" type="text/css">
+   
+        <link href="{{asset('./assets/style/reset/global-reset.css') }}" rel="stylesheet" type="text/css">
         <title>Laravel</title>
 
     </head>

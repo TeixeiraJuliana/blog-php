@@ -10,7 +10,7 @@ class Post extends Model
 {
     protected $fillable = [
         'title',
-        'description',
+        'content',
     ];
     public function user()
     {
@@ -24,4 +24,5 @@ class Post extends Model
     {
         return $this->hasMany('App\Models\User');
     }
+    protected $guarded = [];
 }

@@ -3,7 +3,7 @@
 
 @section('content')<!--como criar title-->
 @section('title', $post->title)
-<p>{{ $post->description}}</p>
+<p>{{ $post->content}}</p>
 <h1>Comentários</h1>
 <ul>
     @forelse ( $post->comments as $comment)

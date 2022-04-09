@@ -18,17 +18,17 @@ class PostController extends Controller
             }else{
             $posts = Post::all();
         }
-        return view('welcome', [ 'posts' =>  $posts, 'search' => $search]);
+        return view('home', [ 'posts' =>  $posts, 'search' => $search]);
     }
     public function create()
     {
-        return view('layouts.form-post');
+        return view('post.form-post');
     }
     public function store(Request $request)
     {
         $post = new Post;
         $post->title = $request->title;
-        $post->description = $request->description;
+        $post->content = $request->content;
 
         $user = auth()->user();
         $post->user_id = $user->id;
@@ -38,6 +38,19 @@ class PostController extends Controller
     }
     public function show($id){
         $post = Post::findOrFail($id);
-        return view('layouts.show-post', ['post' => $post]);
+        return view('post.show-post', ['post' => $post]);
     }
+    public function delete($id){
+        Post::findOrFail($id)->delete();
+        return back();
+    }
+    public function edit($id){
+        $post = Post::findOrFail($id);
+        return view('post.form-edit-post', ['post' => $post]);
+    }
+    public function update(Request $request){
+        Post::findOrFail($request->id)->update($request->all());
+        return back();
+    }
+
 }
