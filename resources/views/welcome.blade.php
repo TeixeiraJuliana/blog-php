@@ -14,12 +14,13 @@
 <h1>Últimos artigos cadastrados</h1>
 @endif
 @foreach ($posts as  $post)
-<div>{{$post->title}}</div>
-<div>{{$post->description}}</div>
+<span>{{$post->title}}</span>
 <div class="m-icons-up-del">
     <a href="posts/{{ $post->id }}">Abrir</a>
 </div>
 @endforeach
+
+<li><a href="/post/create">Cadastrar artigo</a></li>
 @if ((count($posts) == 0 && $search))
 <p> Nenhum resultado para: {{$search}}   </p>
 @elseif (count($posts) == 0)

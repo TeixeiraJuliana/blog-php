@@ -58,14 +58,12 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
-
-    /**
-     * Get all of the comments for the User
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
     public function posts()
     {
         return $this->hasMany('App\Models\Post');
+    }
+    public function comments()
+    {
+        return $this->hasMany('App\Models\Comment');
     }
 }

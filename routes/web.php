@@ -2,30 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Controllers\Post;
+use Illuminate\Http\Controllers\Comment;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-
-
-|Route::group(['middleware' => 'web'], function () {
-    Route::get('/',  [App\Http\Controllers\PostController::class, 'index']);
-    Auth::routes();
-    Route::get('/Post', [App\Http\Controllers\PostController::class, 'index'])->name('post');
-});
-
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', [App\Http\Controllers\PostController::class, 'index']);
 Route::post('/posts', [App\Http\Controllers\PostController::class, 'store']);
 Route::get('post/create', [App\Http\Controllers\PostController::class, 'create'])->middleware('auth');
 Route::get('posts/{id}', [App\Http\Controllers\PostController::class, 'show']);
+Route::delete('posts/{id}', [App\Http\Controllers\PostController::class, 'delete']);
 
+Route::post('/comments', [App\Http\Controllers\CommentController::class, 'store']);
+Route::delete('comments/{id}', [App\Http\Controllers\CommentController::class, 'delete']);
 
 
 

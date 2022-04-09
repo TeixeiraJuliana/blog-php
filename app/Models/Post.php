@@ -12,14 +12,16 @@ class Post extends Model
         'title',
         'description',
     ];
-
-    /**
-     * Get the user that owns the Post
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
     public function user()
     {
         return $this->belongsTo('App\Models\User');
+    }
+    public function comments()
+    {
+        return $this->hasMany('App\Models\Comment');
+    }
+    public function users()
+    {
+        return $this->hasMany('App\Models\User');
     }
 }

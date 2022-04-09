@@ -7,9 +7,16 @@ https://www.youtube.com/watch?v=V66VbP4p0Wc&list=PLVSNL1PHDWvSOFpHtRi1-oZjBll69l
 
 
 
+https://pt.stackoverflow.com/questions/136163/deploy-de-projeto-laravel-pelo-git
 
-
-
+$comment = new Comment;
+        $request->user()->$comment = $comment->create($request->all());
+        return Redirect::to('layouts.show-post',  $comment->post_id)->with('msg', 'Artigo criado com sucesso criado com sucesso');
+        
+$comment = new Comment;
+        $comment->message = $request->message;
+        $comment->save();
+        return Redirect::to('/')->with('msg', 'Artigo criado com sucesso criado com sucesso');
 
 
 Funcionou com erro mas enviou dado
@@ -21,7 +28,11 @@ $post = new Post;
         return Redirect::to('/');
 
 
+      $post = $post->create($request->all());
 
+
+        $comment =  $comment->create($request->all());
+        
 
   <div class="m-icons-up-del">
      <a href="posts/{{ $post->id }}"></a>
@@ -35,3 +46,5 @@ npm install
 npm run dev
 
 php artisan make:migration add_user_id_to_posts_table
+
+https://www.youtube.com/watch?v=gFAB9GKtxEs

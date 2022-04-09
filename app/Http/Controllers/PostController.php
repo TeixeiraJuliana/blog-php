@@ -26,13 +26,14 @@ class PostController extends Controller
     }
     public function store(Request $request)
     {
+        $post = new Post;
+        $post->title = $request->title;
+        $post->description = $request->description;
 
         $user = auth()->user();
         $post->user_id = $user->id;
 
-
-        $post = new Post;
-        $post = $post->create($request->all());
+        $post->save();
         return Redirect::to('/')->with('msg', 'Artigo criado com sucesso criado com sucesso');
     }
     public function show($id){

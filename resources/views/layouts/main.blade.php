@@ -4,18 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Laravel</title>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="{{asset('./assets/style/base/global-base.css') }}" rel="stylesheet" type="text/css">
-        <link href="{{asset('./assets/style/module/global-module.css') }}" rel="stylesheet" type="text/css">
-        <link href="{{asset('./assets/style/reset/global-reset.css') }}" rel="stylesheet" type="text/css">
-        <link href="{{asset('./assets/style/theme/global-theme.css') }}" rel="stylesheet" type="text/css">
+
     </head>
     <body class="antialiased">
        <div class="container">
             <nav class="header">
                 <ul>
                 @auth()
-                <li><a href="/post/create">Criar Artigo</a></li>
                 <li><a href="/dashboard">dashboard</a></li>
                 <form action="/logout" method="POST">
                     @csrf
