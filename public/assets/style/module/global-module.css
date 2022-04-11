@@ -4,18 +4,15 @@
     align-items: center;
 
 }
+.m-flex{
+    display: flex;
+    align-items: center;
+}
 .header ul{
     display: flex;
 }
 .header ul li{
     list-style: none;
-}
-.body-content form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
 }
 .item{
     display: flex;
@@ -31,7 +28,6 @@
 
 }
 .conteiner-box{
-    margin-top: 100px red;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 6;
@@ -40,7 +36,17 @@
     flex: none;
     width: 100%;
     scroll-snap-align: start;
+    background-color: bisque;
 }
 .box-item{
-    background-color: antiquewhite;
+
+
+}
+.m-icons-up-del
+{
+    justify-content: space-between;
+    position: absolute;
+}
+.text-card{
+    
 }

@@ -15,20 +15,38 @@
 <h1>Últimos artigos cadastrados</h1>
 @endif
 <div class="conteiner-box">
-    <div class="box-item">
         @foreach ($posts as  $post)
-        <span>{{$post->title}}</span>
-        <div class="m-icons-up-del">
-            <button><a href="posts/{{ $post->id }}"><img src="./assets/image/options.png" alt=""></a></button>
+        <div class="box-item">
+            <div class="text-card">
+                <p>
+                   {{$post->title}}
+                </p>
+            </div>
+            <div class="m-icons-up-del m-flex">
+                <div>
+                    <button>
+                        <a href="posts/{{ $post->id }}">
+                            <img src="./assets/image/options.png" alt="">
+                        </a>
+                    </button>
+                </div>
+                <div>
+                    <form action="/posts/{{ $post->id}}" method="post">
+                        @csrf
+                        @method('delete')
+                        <button type="submit"><img src="./assets/image/trash.png" alt=""></button>
+                    </form>
+                </div>
+                <div>
+                    <button>
+                        <a href="posts/edit/{{ $post->id }}">
+                            <img src="./assets/image/update.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </div>
         </div>
-        <form action="/posts/{{ $post->id}}" method="post">
-            @csrf
-            @method('delete')
-            <button type="submit"><img src="./assets/image/trash.png" alt=""></button>
-        </form>
-        <button><a href="posts/edit/{{ $post->id }}"></a><img src="./assets/image/update.png" alt=""></button>
         @endforeach
-    </div>
 </div>
 
 <li><a href="/post/create">Cadastrar artigo</a></li>
