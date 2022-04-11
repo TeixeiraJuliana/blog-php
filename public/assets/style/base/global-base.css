@@ -20,7 +20,8 @@ body{
 }
 .search{
     width: 100%;
-    min-width: 80vw;
+    min-width: 40vw;
+
 }
 .search-item{
     width: 100%;
@@ -32,20 +33,28 @@ body{
 .search-item input, button{
     height: 100%;
 }
-
-
 .body-content{
     width: 100%;
 }
+.left-box {
+    width: 50%;
+}
 .conteiner-box{
-    width: 100%;
+    width: 50%;
+
 }
 .box-item{
     width: 300px;
-    height: 200px;
+    height: 100%;
 }
 .text-card{
-    height: 90%;
+    height: 60%;
+}
+.btn{
+    height: 60px;
+}
+.big{
+    width: 230px;
 }
 .footer{
     width: 100%;

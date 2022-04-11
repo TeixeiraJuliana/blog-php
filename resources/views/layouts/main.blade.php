@@ -3,10 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{asset('./assets/style/layout/global-layout.css') }}" rel="stylesheet" type="text/css">
         <link href="{{asset('./assets/style/base/global-base.css') }}" rel="stylesheet" type="text/css">
         <link href="{{asset('./assets/style/module/global-module.css') }}" rel="stylesheet" type="text/css">
         <link href="{{asset('./assets/style/theme/global-theme.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{asset('./assets/style/responsiveness/global-responsiveness.css') }}" rel="stylesheet" type="text/css">
         <link href="{{asset('./assets/style/reset/global-reset.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{asset('./assets/style/state/global-state.css') }}" rel="stylesheet" type="text/css">
         <title>Laravel</title>
     </head>
     <body class="antialiased">
@@ -14,7 +17,7 @@
             <nav class="header m-flex">
                 <ul class="m-flex">
                 @auth()
-                <li><a href="/dashboard">dashboard</a></li>
+                <li><a href="/">dashboard</a></li>
                 <form action="/logout" method="POST">
                     @csrf
                 <li>

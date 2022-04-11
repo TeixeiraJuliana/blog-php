@@ -14,7 +14,8 @@
 .header ul li{
     list-style: none;
 }
-.header a{
+.header a,
+.btn a{
     text-decoration: none;
 }
 .body-content{
@@ -22,16 +23,41 @@
     padding: 50px;
 }
 /*dash*/
+.container-dash{
+    align-items: flex-start;
+    margin: 50px 0px;
 
+}
+.left-box{
+    flex-direction: column;
+    justify-content: center;
+}
+.left-box,
+.right-box {
+    flex-direction: column;
+    margin: 0px 20px;
+
+}
+.container-dash h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header-dash{
+    flex-direction: column;
+    justify-content: center;
+}
 .search{
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    margin: 30px 0px;
+    margin-bottom: 30px;
 
 }
 .search-item input{
     padding: 0px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
 }
 .search-item  button{
     border: none;
@@ -40,28 +66,35 @@
 }
 .conteiner-box{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 6;
     grid-gap: 20px;
     margin: 0;
     flex: none;
     width: 100%;
     scroll-snap-align: start;
-    margin: 50px 0px;
 }
 .box-item{
     padding: 20px;
-    box-shadow: -1px -0.5px 3px rgb(80, 79, 79);
+    border-radius: 10px;
+
 }
 .m-icons-up-del
 {
     justify-content: space-between;
+    padding: 5px;
 }
 .text-card{
-
+    padding: 20px;
+    margin-bottom: 10px;
 }
 .m-icons-up-del button{
     border: none;
+}
+.btn{
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
 }
 .item{
     display: flex;
