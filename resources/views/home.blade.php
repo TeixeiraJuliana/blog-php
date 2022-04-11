@@ -48,7 +48,7 @@
                         </div>
                         <div>
                             <button>
-                                <a href="posts/edit/{{ $post->id }}">
+                                <a href="/posts/{{ $post->id }}/edit">
                                     <img src="./assets/image/update.svg" alt="">
                                 </a>
                             </button>
