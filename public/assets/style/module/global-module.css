@@ -79,14 +79,13 @@
     border-radius: 10px;
 
 }
-.m-icons-up-del
-{
+.m-icons-up-del{
     justify-content: space-between;
-    padding: 5px;
+    padding: 5px 20px;
 }
 .text-card{
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .m-icons-up-del button{
     border: none;
