@@ -3,7 +3,7 @@
 
 
 @section('content')
-@section('title', 'Artigos')
+@section('title', 'Dashboard')
 <form action="/" method="GET">
     <h2>Encontre</h2>
     <input type="text" name="search" >

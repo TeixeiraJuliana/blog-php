@@ -33,7 +33,7 @@
                 </ul>
             </nav>
             @auth()
-            <div class="body-content">
+            <div class="body-content m-flex">
                 <h1>@yield('title')</h1>
                 @if (session('msg'))
                     <p class="msg">{{session('msg')}}</p>

@@ -14,22 +14,14 @@
 .header ul li{
     list-style: none;
 }
-.item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.body-content{
     flex-direction: column;
-
-}
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 50px;
 
 }
 .conteiner-box{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 6;
     grid-gap: 20px;
     margin: 0;
@@ -51,4 +43,15 @@
 .m-icons-up-del button{
     border: none;
 }
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
