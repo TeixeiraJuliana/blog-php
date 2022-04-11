@@ -52,5 +52,4 @@ class PostController extends Controller
         Post::findOrFail($request->id)->update($request->all());
         return back();
     }
-
 }

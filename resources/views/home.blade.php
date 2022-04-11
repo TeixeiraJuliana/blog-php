@@ -14,18 +14,22 @@
 @else
 <h1>Últimos artigos cadastrados</h1>
 @endif
-@foreach ($posts as  $post)
-<span>{{$post->title}}</span>
-<div class="m-icons-up-del">
-    <a href="posts/{{ $post->id }}">Abrir</a>
+<div class="conteiner-box">
+    <div class="box-item">
+        @foreach ($posts as  $post)
+        <span>{{$post->title}}</span>
+        <div class="m-icons-up-del">
+            <button><a href="posts/{{ $post->id }}"><img src="./assets/image/options.png" alt=""></a></button>
+        </div>
+        <form action="/posts/{{ $post->id}}" method="post">
+            @csrf
+            @method('delete')
+            <button type="submit"><img src="./assets/image/trash.png" alt=""></button>
+        </form>
+        <button><a href="posts/edit/{{ $post->id }}"></a><img src="./assets/image/update.png" alt=""></button>
+        @endforeach
+    </div>
 </div>
-<form action="/posts/{{ $post->id}}" method="post">
-    @csrf
-    @method('delete')
-    <button type="submit"><img src="" alt="">Deletar</button>
-</form>
-<div><a href="posts/edit/{{ $post->id }}">Editar</a></div>
-@endforeach
 
 <li><a href="/post/create">Cadastrar artigo</a></li>
 @if ((count($posts) == 0 && $search))
