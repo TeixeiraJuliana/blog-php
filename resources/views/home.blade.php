@@ -17,7 +17,7 @@
 <div class="conteiner-box">
         @foreach ($posts as  $post)
         <div class="box-item">
-            <div class="text-card">
+            <div class="text-card ">
                 <p>
                    {{$post->title}}
                 </p>

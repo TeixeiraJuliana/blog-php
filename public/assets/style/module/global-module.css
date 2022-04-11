@@ -36,17 +36,19 @@
     flex: none;
     width: 100%;
     scroll-snap-align: start;
-    background-color: bisque;
 }
 .box-item{
-
-
+    padding: 20px;
+    box-shadow: -1px -0.5px 3px rgb(80, 79, 79);
 }
 .m-icons-up-del
 {
     justify-content: space-between;
-    position: absolute;
 }
 .text-card{
-    
+
 }
+.m-icons-up-del button{
+    border: none;
+}
+
