@@ -1,12 +1,25 @@
+:root{
+    --strong:#120a14;
+    --light:#4a2c4e;
+    --medium:#20a4d8;
+    --harmony:#20dbd8;
+    --neutrall:#baefed;
+    --neutrallLight:#e3edf6;
+    --grey:#868679;
 
+}
 .header{
     background-color: rgb(177, 199, 199);
-
+    color: black;
+}
+.header a{
+    color: black;
 }
 .container{
     background-color: rgb(248, 248, 248);
-
 }
+.search-item  button{}
+.search-item  button{}
 .footer{
     background-color: rgb(109, 124, 124);
 }

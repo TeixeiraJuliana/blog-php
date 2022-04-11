@@ -4,11 +4,14 @@
 
 @section('content')
 @section('title', 'Dashboard')
-<form action="/" method="GET">
-    <h2>Encontre</h2>
-    <input type="text" name="search" >
-    <button type="submit">search</button>
-</form>
+<div>
+    <form class="search m-flex" action="/" method="GET">
+        <div class="search-item m-flex">
+            <input type="text" name="search" >
+            <button type="submit"><img src="./assets/image/find.png" alt=""></button>
+        </div>
+    </form>
+</div>
 @if ($search)
 <h1>Buscando por:  {{$search}}</h1>
 @else

@@ -11,8 +11,8 @@
     </head>
     <body class="antialiased">
        <div class="container">
-            <nav class="header">
-                <ul>
+            <nav class="header m-flex">
+                <ul class="m-flex">
                 @auth()
                 <li><a href="/dashboard">dashboard</a></li>
                 <form action="/logout" method="POST">
