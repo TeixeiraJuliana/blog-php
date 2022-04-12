@@ -13,10 +13,10 @@
         <title>Laravel</title>
     </head>
     <body class="antialiased">
+        @auth()
        <div class="container">
             <nav class="header m-flex">
                 <ul class="m-flex">
-                @auth()
                 <li><a href="/">dashboard</a></li>
                 <form action="/logout" method="POST">
                     @csrf
@@ -28,11 +28,6 @@
                 </li>
                 </form>
                 @endauth
-                 @guest()
-                 <li><a href="/login">Login</a></li>
-                 <li><a href="/register">Cadastrar</a></li>
-
-                 @endguest
                 </ul>
             </nav>
             @auth()

@@ -150,3 +150,38 @@
 #rows-for-content{
     word-break:keep-all;
 }
+
+/*Login e registro*/
+
+.log-reg{
+    justify-content: center;
+    padding: 100px;
+}
+.m-card-log-reg{
+    justify-content: center;
+}
+.card-conteiner-right,
+.card-conteiner-left{
+    justify-content: center;
+}
+.card-conteiner{
+    flex-direction: column;
+}
+.box-log-reg{
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(151, 135, 135);
+}
+.item-log-reg{
+    flex-direction: column;
+}
+.item-log-reg label{
+    margin: 5px 0px;
+}
+.item-log-reg input{
+
+}
+.footer-log-reg {
+    flex-direction: column;
+}

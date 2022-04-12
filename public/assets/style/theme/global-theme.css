@@ -66,3 +66,11 @@ h1{
     background-color: rgb(240, 230, 230);
     box-shadow:  1px 1px 10px var(--grey);
 }
+
+.card-conteiner-right{
+    border: 1px solid red;
+}
+.card-conteiner-left{
+    border: 1px solid rgb(22, 18, 18);
+
+}
