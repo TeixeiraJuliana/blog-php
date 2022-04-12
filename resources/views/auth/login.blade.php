@@ -40,7 +40,7 @@
                             </a>
                         @endif
 
-                        <button class="btn big">  {{ __('Log in') }}</button>
+                        <button class="btn max">  {{ __('Log in') }}</button>
                         <p><a href="/register">Registrar</a></p>
                     </div>
                 </form>

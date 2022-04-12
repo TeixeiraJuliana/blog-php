@@ -49,10 +49,10 @@
 
                     <div class="footer-log-reg m-flex">
                         <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                            {{ __('Already registered?') }}
+                            <p>{{ __('Already registered?') }}</p>
                         </a>
 
-                        <button class="btn big">
+                        <button class="btn max">
                             {{ __('Register') }}
                         </button>
                     </div>

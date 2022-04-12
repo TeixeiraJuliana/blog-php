@@ -55,6 +55,9 @@ body{
 .big{
     width: 230px;
 }
+.max{
+    width: 100%;
+}
 .footer{
     width: 100%;
     height: 260px;
@@ -122,6 +125,8 @@ body{
 }
 .box-log-reg{
     width: 100%;
+    max-width: 500px;
+    padding: 50px;
 }
 .item-log-reg input{
     width: 100%;
