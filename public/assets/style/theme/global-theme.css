@@ -23,11 +23,15 @@ h1{
     font-size: 2rem;
 }
 .container{
-    
+
 }
-.search-item  input{
+.search-item input{
     background-color: var(--neutrall);
     box-shadow:  1px 1px 10px var(--medium);
+}
+.form-box  input,
+.form-box textarea{
+   border: 1px solid var(--light);
 }
 .search-item button,
 .m-icons-up-del button{
@@ -46,6 +50,7 @@ h1{
 }
 .btn{
     background-color: var(--light);
+    color: var(--neutrallLight);
 }
 .btn a{
     color: var(--neutrallLight);
@@ -53,4 +58,11 @@ h1{
 .footer{
     background-color: var(--strong);
     color: var(--neutrallLight);
+}
+#change-border:target{
+    border: 1px solid yellow;
+}
+.coment-info{
+    background-color: rgb(240, 230, 230);
+    box-shadow:  1px 1px 10px var(--grey);
 }

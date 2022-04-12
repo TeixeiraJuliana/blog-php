@@ -36,7 +36,6 @@
 .right-box {
     flex-direction: column;
     margin: 0px 20px;
-
 }
 .container-dash h1{
     text-align: center;
@@ -53,16 +52,20 @@
     margin-bottom: 30px;
 
 }
-.search-item input{
+.search-item  input,
+.form-box input,
+.form-box textarea{
     padding: 0px 15px;
     outline: none;
     border: none;
     border-radius: 5px;
 }
+.form-box textarea{
+    padding: 15px;
+}
 .search-item  button{
     border: none;
     margin-left: 10px;
-
 }
 .conteiner-box{
     display: grid;
@@ -77,7 +80,6 @@
 .box-item{
     padding: 20px;
     border-radius: 10px;
-
 }
 .m-icons-up-del{
     justify-content: space-between;
@@ -88,6 +90,8 @@
     margin-bottom: 30px;
 }
 .m-icons-up-del button{
+    border-radius: 10px;
+    padding: 5px;
     border: none;
 }
 .btn{
@@ -101,9 +105,45 @@
     align-items: center;
     flex-direction: column;
 }
+/*formulário*/
+.form-box{
+    padding: 50px;
+}
+.form-box h1{
+    text-align: center;
+}
+.footer-form-box{
+    justify-content: space-between;
+}
+.form-box label{
+    margin-bottom: 5px;
+}
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.big-text{
+    border-radius: 5px;
+    justify-content: center;
+}
+.small textarea{
+    margin: 10px 0px;
+}
+.content-coments{
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+.coment-info{
+    justify-content: center;
+    margin: 7.5px;
+}
+.coment-info p{
+    text-transform: lowercase;
+    margin: 10px;
+}
+.coment-info button{
+    border-radius: 50%;
 }

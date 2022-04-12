@@ -11,7 +11,7 @@
         <form class="search m-flex" action="/" method="GET">
             <div class="search-item m-flex">
                 <input type="text" name="search" >
-                <button type="submit"><img src="./assets/image/find.png" alt=""></button>
+                <button  type="submit"><img src="./assets/image/find.png" alt=""></button>
             </div>
         </form>
         <button class="btn big"><a href="/post/create">Cadastrar artigo</a></button>
