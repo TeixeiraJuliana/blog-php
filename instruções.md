@@ -9,6 +9,9 @@ https://pt.stackoverflow.com/questions/136163/deploy-de-projeto-laravel-pelo-git
 
 https://www.youtube.com/watch?v=gFAB9GKtxEs
 
+https://www.google.com/search?q=ux+login&tbm=isch&ved=2ahUKEwjbqdLS-Y73AhUyL7kGHee5AjIQ2-cCegQIABAA&oq=ux+login&gs_lcp=CgNpbWcQAzIFCAAQgAQyBAgAEB4yBAgAEB4yBAgAEB4yBAgAEB4yBggAEAUQHjIGCAAQBRAeMgYIABAFEB4yBggAEAUQHjIGCAAQCBAeOgcIIxDvAxAnOgQIABBDOgsIABCABBCxAxCDAToICAAQgAQQsQM6BwgAELEDEENQyQlY7xtgxx5oAHAAeACAAewBiAHHCpIBBTAuOC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=jKlVYtszst7k5Q_n84qQAw&bih=752&biw=1432#imgrc=ABY2udvR-pYW6M
+
+ondas com translate 
 
 # deploy laravel 
 git clone git@github.com:seuprojeto
