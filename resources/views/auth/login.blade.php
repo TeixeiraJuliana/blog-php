@@ -1,3 +1,4 @@
+@extends('layouts.main')
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
@@ -38,10 +39,8 @@
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
-
-                <x-jet-button class="ml-4">
-                    {{ __('Log in') }}
-                </x-jet-button>
+                <button class="btn big"><a href="/register">Registrar</a></button>
+                <button class="btn big">  {{ __('Log in') }}</button>
             </div>
         </form>
     </x-jet-authentication-card>
