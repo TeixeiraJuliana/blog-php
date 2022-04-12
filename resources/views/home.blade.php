@@ -59,11 +59,13 @@
         </div>
         <button class="btn big"><a href="/">Voltar</a></button>
     </div>
-    @if ((count($posts) == 0 && $search))
-    <p> Nenhum resultado para: {{$search}}</p>
-    @elseif (count($posts) == 0)
-    <p>Não há artigos cadastrados   </p>
-    @endif
+    <div class="results m-flex">
+        @if ((count($posts) == 0 && $search))
+        <p> Nenhum resultado para: <strong>{{$search}}</strong></p>
+        @elseif (count($posts) == 0)
+        <p>Não há artigos cadastrados   </p>
+        @endif
+    </div>
     </div>
 </div>
 @endsection

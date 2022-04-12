@@ -33,6 +33,9 @@ body{
 .search-item input, button{
     height: 100%;
 }
+.results {
+    width: 40vw;
+}
 .body-content{
     width: 100%;
 }

@@ -60,6 +60,11 @@
     border: none;
     border-radius: 5px;
 }
+.results {
+    width: 40vw;
+    margin-top: 30px;
+    justify-content: center;
+}
 .form-box textarea{
     padding: 15px;
 }
