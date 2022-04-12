@@ -2,7 +2,7 @@
 <div class="container m-flex log-reg">
     <div class="m-card-log-reg  m-flex">
         <div class="card-conteiner-left  m-flex">
-
+            <img src="./assets/image/busines.jpg" alt="">
         </div>
         <div class="card-conteiner-right  m-flex">
 

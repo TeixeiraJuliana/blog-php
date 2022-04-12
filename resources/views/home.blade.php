@@ -5,7 +5,6 @@
 @section('content')
 @section('title', 'Dashboard')
 <div class="container-dash m-flex">
-
     <div class="left-box m-flex">
         <h1>Ferramentas</h1>
         <form class="search m-flex" action="/" method="GET">
@@ -15,6 +14,9 @@
             </div>
         </form>
         <button class="btn big"><a href="/post/create">Cadastrar artigo</a></button>
+        <div class="box-item dash-data">
+
+        </div>
     </div>
     <div>
     <div class="right-box m-flex">

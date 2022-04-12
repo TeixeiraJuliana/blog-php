@@ -66,11 +66,18 @@ h1{
     background-color: rgb(240, 230, 230);
     box-shadow:  1px 1px 10px var(--grey);
 }
-
+.log-reg{
+    background: linear-gradient(90deg, rgb(86, 83, 146) 0%, rgb(88, 88, 194) 35%, rgb(114, 114, 252) 100%);
+}
 .card-conteiner-right{
-    border: 1px solid red;
+    background-color: var(--light);
 }
 .card-conteiner-left{
-    border: 1px solid rgb(22, 18, 18);
-
+    background-color: #fff;
+}
+.box-log-reg{
+    background-color: var(--neutrall);
+}
+.item-log-reg input{
+    border: 1px solid var(--harmony);
 }

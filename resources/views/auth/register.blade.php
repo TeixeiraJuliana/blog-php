@@ -8,8 +8,8 @@
         <div class="card-conteiner-right  m-flex">
             <div class="box-log-reg m-flex">
                 <form method="POST" action="{{ route('register') }}">
+                <h1>Registrar</h1>
                     @csrf
-
                     <div class="item-log-reg m-flex">
                         <label  for="name" value="{{ __('Name') }}">Nome</label>
                         <input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
