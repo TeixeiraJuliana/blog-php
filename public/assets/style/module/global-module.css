@@ -147,3 +147,6 @@
 .coment-info button{
     border-radius: 50%;
 }
+#rows-for-content{
+    word-break:keep-all;
+}

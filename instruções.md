@@ -62,7 +62,8 @@ INSERT INTO posts (title, content, user_id ) VALUES ('Diretor de O Homem do Nort
 
 
 
-INSERT INTO posts (title, content, user_id ) VALUES ('', '', 1);
+INSERT INTO posts (title, content, user_id ) VALUES ('Livro de brasileira será usado na educação de filhos de finlandeses', 'A editora Jaguatirica, do Rio de Janeiro, vai publicar, no próximo mês, o livro infantil Uma amiga de outro Mundo. De autoria da jornalista Flávia Corrêa e com ilustração de Fran Junqueira, a publicação...', 1);
+
 INSERT INTO posts (title, content, user_id ) VALUES ('', '', 1);
 INSERT INTO posts (title, content, user_id ) VALUES ('', '', 1);
 INSERT INTO posts (title, content, user_id ) VALUES ('', '', 1);

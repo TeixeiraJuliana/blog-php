@@ -46,10 +46,11 @@ class PostController extends Controller
     }
     public function edit($id){
         $post = Post::findOrFail($id);
-        return view('post.form-edit-post', ['post' => $post]);
+        return view('post.form-post', ['post' => $post]);
     }
-    public function update(Request $request){
-        Post::findOrFail($request->id)->update($request->all());
-        return back();
+    public function update(Request $request, $id){
+        $post = Post::findOrFail($id);
+        $post->update($request->all());
+        return Redirect::to('/')->with('msg', 'Artigo criado com sucesso criado com sucesso');
     }
 }
