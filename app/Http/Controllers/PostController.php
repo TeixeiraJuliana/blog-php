@@ -23,7 +23,6 @@ class PostController extends Controller
         }
 
         $user = User::all(['name']);
-
         return view('home',
         [ 'posts' =>  $posts, 'search' => $search], [ 'user' => $user]);
     }
@@ -45,6 +44,10 @@ class PostController extends Controller
     }
     public function show($id){
         $post = Post::findOrFail($id);
+
+        $post->visits +=1;
+        $post->save();
+
         return view('post.show-post', ['post' => $post]);
     }
     public function delete($id){

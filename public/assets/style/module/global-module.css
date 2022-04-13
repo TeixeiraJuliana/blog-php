@@ -33,6 +33,9 @@
     align-items: flex-start;
     margin: 50px 0px;
 }
+.conteiner-box{
+    text-align: center;
+}
 .left-box{
     flex-direction: column;
     justify-content: center;
@@ -41,6 +44,7 @@
 .right-box {
     flex-direction: column;
     margin: 0px 20px;
+    justify-content: center;
 }
 .container-dash h1{
     text-align: center;
@@ -122,6 +126,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.item-number{
+    border-radius: 50%;
+    margin: 15px 0px;
+    justify-content: center;
+    font-weight: bold;
 }
 /*formulário*/
 .form-box{

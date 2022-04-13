@@ -81,3 +81,7 @@ h1{
 .item-log-reg input{
     border: 1px solid var(--harmony);
 }
+.item-number{
+    box-shadow:  1px 1px 10px var(--light);
+    color: var(--light);
+}

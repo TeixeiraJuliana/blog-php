@@ -58,7 +58,7 @@ body{
 .left-box,
 .right-box {
     width: 50%;
-    
+
 }
 .box-item{
     min-height: 300px
@@ -149,4 +149,15 @@ body{
 }
 .card-conteiner-left img{
     width: 80%;
+}
+
+.flex-colum img{
+    width: 100%;
+    border-radius: 10%;
+    height: 200px;
+}
+
+.item-number{
+    width: 40px;
+    height: 40px;
 }

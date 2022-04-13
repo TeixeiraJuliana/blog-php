@@ -18,6 +18,7 @@
             <nav class="header m-flex">
                 <ul class="m-flex">
                 <li><a href="/">dashboard</a></li>
+                <li><a href="/post/create">Cadastrar artigo</a></li>
                 <form action="/logout" method="POST">
                     @csrf
                 <li>

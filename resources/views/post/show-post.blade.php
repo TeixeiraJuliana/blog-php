@@ -6,7 +6,9 @@
 <div class="big-text m-flex">
     <p>{{ $post->content}}</p>
 </div>
+<p>Esse artigo foi acessado {{$post->visits}} vezes </p>
 <h3>Comentários</h3>
+
 <ul class="content-coments m-flex">
 
     @forelse ( $post->comments as $comment)

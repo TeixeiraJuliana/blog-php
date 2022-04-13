@@ -72,8 +72,8 @@ php artisan make:migration add_user_id_to_posts_table
 
 # Banco de dados 
 
-INSERT INTO posts (title, content, user_id ) VALUES ('‘Viúva de Ferro’: uma trama distópica (e não-binária) sobre a China', '“Escrevi três livros antes de Viúva de Ferro, que é o primeiro a apresentar uma protagonista chinesa e minha cultura fortemente”, contou Xiran à VEJA. “Agora, eu escrevo em tempo integral, porque a pa... 
-Leia mais em: https://veja.abril.com.br/cultura/viuva-de-ferro-uma-trama-distopica-e-nao-binaria-sobre-a-china/', 1);
+INSERT INTO posts (title, content, visits , user_id ) VALUES ('‘Viúva de Ferro’: uma trama distópica (e não-binária) sobre a China', '“Escrevi três livros antes de Viúva de Ferro, que é o primeiro a apresentar uma protagonista chinesa e minha cultura fortemente”, contou Xiran à VEJA. “Agora, eu escrevo em tempo integral, porque a pa... 
+Leia mais em: https://veja.abril.com.br/cultura/viuva-de-ferro-uma-trama-distopica-e-nao-binaria-sobre-a-china/',10, 1);
 
 INSERT INTO posts (title, content, user_id ) VALUES ('‘Povos originários: guerreiros do tempo’, um livro de Ricardo Stuckert', 'O fotógrafo Ricardo Stuckert lança nos próximos dias o livro Povos originários: guerreiros do tempo, pela Tordesilhas Livros. 
 Leia mais em: https://veja.abril.com.br/coluna/radar/povos-originarios-guerreiros-do-tempo-um-livro-de-ricardo-stuckert/', 1);
@@ -134,3 +134,9 @@ with('comments');
                    @foreach ($user as $usuario)
                     {{$usuario->name}}
                    @endforeach
+
+
+
+        $posts = Post::find(1);
+        $posts->visits = $posts->visits+1;
+        $posts->save();

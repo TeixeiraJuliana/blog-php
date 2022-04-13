@@ -17,6 +17,7 @@ return new class extends Migration
             $table->bigIncrements('id')->unsigned();
             $table->string('title');
             $table->text('content');
+            $table->number('visits');
             $table->softDeletes();
             $table->timestamps();
         });
