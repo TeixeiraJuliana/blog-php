@@ -10,7 +10,8 @@
         <link href="{{asset('./assets/style/responsiveness/global-responsiveness.css') }}" rel="stylesheet" type="text/css">
         <link href="{{asset('./assets/style/reset/global-reset.css') }}" rel="stylesheet" type="text/css">
         <link href="{{asset('./assets/style/state/global-state.css') }}" rel="stylesheet" type="text/css">
-        <title>Laravel</title>
+        <link href="{{asset('./assets/style/responsiveness/r-login-register.css') }}" rel="stylesheet" type="text/css">
+        <title>Blog</title>
     </head>
     <body class="antialiased">
         @auth()

@@ -36,7 +36,7 @@ body{
 
 .search{
     width: 100%;
-    min-width: 40vw;
+    background-color: red;
 
 }
 .search-item{
@@ -50,7 +50,7 @@ body{
     height: 100%;
 }
 .results {
-    width: 40vw;
+
 }
 .body-content{
     width: 100%;
@@ -114,8 +114,7 @@ body{
 .coment-info button{
     width: 30px;
     height: 30px;
-    margin: 5px;
-    padding: 3px;
+
 }
 .coment-info{
     width: 100%;
@@ -160,4 +159,16 @@ body{
 .item-number{
     width: 40px;
     height: 40px;
+}
+
+@media only screen and (max-width: 750px) {
+    .card-conteiner-left{
+        display: none;
+    }
+    input{
+        max-width: 50px;
+        margin: 0;
+        padding: 0;
+        max-width: 50px;
+    }
 }

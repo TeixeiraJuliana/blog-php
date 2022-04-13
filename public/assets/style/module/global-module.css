@@ -228,3 +228,10 @@
 .footer-log-reg p{
     margin-top: 5px;
 }
+
+.coment-info button{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 3px;
+}

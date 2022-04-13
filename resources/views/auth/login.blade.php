@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="item-log-reg m-flex">
-                        <label for="for="password" value="{{ __('Password') }}"></label>
+                        <label for="password" value="{{ __('Password') }}"></label>
                         <input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
                     </div>
 
