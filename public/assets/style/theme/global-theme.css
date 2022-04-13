@@ -9,7 +9,7 @@
 
 }
 h1{
-    color: var(--strong);
+    color: var(--light);
 }
 .header{
     background-color: var(--light);

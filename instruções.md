@@ -1,4 +1,11 @@
+
+
 # videos uteis 
+compartilhar classe com todas as viewa
+
+https://www.youtube.com/watch?v=PnDiUAix27I
+
+quntidade de acessos aos posts
 Batist
 https://www.youtube.com/watch?v=qH7rsZBENJo&list=PLnDvRpP8BnewYKI1n2chQrrR4EYiJKbUG
 
@@ -11,7 +18,22 @@ https://www.youtube.com/watch?v=gFAB9GKtxEs
 
 https://www.google.com/search?q=ux+login&tbm=isch&ved=2ahUKEwjbqdLS-Y73AhUyL7kGHee5AjIQ2-cCegQIABAA&oq=ux+login&gs_lcp=CgNpbWcQAzIFCAAQgAQyBAgAEB4yBAgAEB4yBAgAEB4yBAgAEB4yBggAEAUQHjIGCAAQBRAeMgYIABAFEB4yBggAEAUQHjIGCAAQCBAeOgcIIxDvAxAnOgQIABBDOgsIABCABBCxAxCDAToICAAQgAQQsQM6BwgAELEDEENQyQlY7xtgxx5oAHAAeACAAewBiAHHCpIBBTAuOC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=jKlVYtszst7k5Q_n84qQAw&bih=752&biw=1432#imgrc=ABY2udvR-pYW6M
 
+helpers 
+https://www.youtube.com/watch?v=5KfpuDNTlaA
 ondas com translate 
+
+sistema financeiro
+https://www.youtube.com/watch?v=WCYKKBtxfrc&list=PLw6ZnC_OJcva1PZgT_cdURU2pX0Eh6_nt&index=48
+
+curso grande 
+https://www.youtube.com/watch?v=efM4oGnIM4w&list=PLxNM4ef1BpxhBRa1TlRrS1TZ0bUo-1r_r
+
+interessante
+https://www.youtube.com/watch?v=6-QeM4THJ0c
+
+https://www.youtube.com/watch?v=uJu2QcK8Nmk&list=PLVSNL1PHDWvS1e1aeoJV7VvaDZ9m67YPU&index=28
+
+https://www.youtube.com/watch?v=62w9n83YvOc
 
 # deploy laravel 
 git clone git@github.com:seuprojeto
@@ -24,7 +46,7 @@ npm install
 bower install
 gulp
 
-
+ <p>Artigos Cadastrados: {{$posts->comments->count()}}</p>
 
 # autenticação  jetstream
 
@@ -83,3 +105,32 @@ INSERT INTO posts (title, content, user_id ) VALUES ('', '', 1);
 INSERT INTO posts (title, content, user_id ) VALUES ('', '', 1);
 INSERT INTO posts (title, content, user_id ) VALUES ('', '', 1);
 
+ <p>Artigos Cadastrados: {{$comment->count()}}</p>
+
+
+
+# codigos 
+
+ [ 'user' => $user],
+['comment' => $comment]
+
+ $user = auth()->user();
+ $comment = Comment::get();
+
+
+    public function dashboard(){
+        $comment = Comment::get();
+        return Redirect::to('/', ['comment' => $comment]);
+    }
+
+with('comments');
+   @for ($posts.lenght()<5)
+
+
+ $user = auth()->user();
+        $posts-> $user->posts;
+
+
+                   @foreach ($user as $usuario)
+                    {{$usuario->name}}
+                   @endforeach

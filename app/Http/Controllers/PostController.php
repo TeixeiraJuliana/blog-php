@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\Post;
+use App\Models\User;
+use App\Models\Comment;
 use Illuminate\Http\Request;
 use Redirect;
 
@@ -9,16 +11,21 @@ class PostController extends Controller
 {
     public function index()
     {
+
         $search = request('search');
 
         if($search){
             $posts = Post::where([
                 ['title', 'like' , '%'.$search.'%']
             ])->get();
-            }else{
-            $posts = Post::all();
+        }else{
+        $posts = Post::all();
         }
-        return view('home', [ 'posts' =>  $posts, 'search' => $search]);
+
+        $user = User::all(['name']);
+
+        return view('home',
+        [ 'posts' =>  $posts, 'search' => $search], [ 'user' => $user]);
     }
     public function create()
     {
@@ -52,5 +59,8 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
         $post->update($request->all());
         return Redirect::to('/')->with('msg', 'Artigo criado com sucesso criado com sucesso');
+    }
+    public function dashboard(){
+        return Redirect::to('dashboard');
     }
 }

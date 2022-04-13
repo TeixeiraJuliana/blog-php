@@ -22,7 +22,6 @@
     </div>
         @empty
         <p>Não existem comentários cadastrados</p>
-
     @endforelse
 </ul>
 <div class="form-box  small">
