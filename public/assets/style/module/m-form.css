@@ -1,0 +1,36 @@
+.card-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.card-form > .left{
+    justify-content: center;
+}
+.item-form{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.item-form label{
+    margin: 5px 0px;
+}
+.item-form input{
+    outline: none;
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+.card-form-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.card-form-footer button{
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+}

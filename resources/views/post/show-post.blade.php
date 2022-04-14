@@ -26,7 +26,7 @@
         <p>Não existem comentários cadastrados</p>
     @endforelse
 </ul>
-<div class="form-box  small">
+<div class="form-box">
     <form action="/comments"  method="POST">
         @csrf
         <input type="hidden" name="post_id" value="{{$post->id}}">
@@ -34,7 +34,7 @@
         <div class="item">
             <textarea  id="" name="message" cols="30" rows="10" placeholder="Adicione um comentário"></textarea>
         </div>
-        <div class="footer-form-box m-flex">
+        <div class="card-form-footer">
             <button class="btn big"><a href="/">Voltar</a></button>
             <button class="btn big" type="submit">Salvar</button>
         </div>

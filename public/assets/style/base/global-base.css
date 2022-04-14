@@ -1,174 +1,55 @@
-body{
-    width: 100vw;
-    height: 100vh;
+#app{
+    width: 100%;
+    height: 100%;
 }
 .container{
     width: 100%;
     height: 100%;
 }
-.header{
+#header,
+#header ul{
     width: 100%;
     height: 130px;
 }
-.header ul{
+#footer{
     width: 100%;
-    height: 100%;
+    height: 160px;
 }
-.body-content{
-    width: 100%;
-    margin-top: 130px;
-}
-.btn{
-    height: 60px;
-}
-.big{
-    width: 230px;
-}
-.max{
-    width: 100%;
-}
-.footer{
-    width: 100%;
-    height: 260px;
-}
-
-/*dashbord*/
-
-.search{
-    width: 100%;
-    background-color: red;
-
-}
-.search-item{
-    width: 100%;
-    height: 60px;
-}
-.search-item input{
-    width: 100%;
-}
-.search-item input, button{
-    height: 100%;
-}
-.results {
-
-}
-.body-content{
-    width: 100%;
-}
-.left-box,
-.right-box {
-    width: 50%;
-
-}
-.box-item{
-    min-height: 300px
-}
-.text-card{
-    height: 60%;
-}
-.container-dash img{
+img{
     width: 30px;
 }
-.dash-data{
-    width: 100%;
-}
-.head-dash{
-
-    height: 100px;
-    width: 100%;
-}
-.container-dash-body{
-    width: 100%;
-}
-/*formulário*/
-
-.form-box{
-    width: 100%;
-}
-.footer-form-box{
-    width: 100%;
-}
-.form-box input, textarea, label{
-    width: 100%;
-}
-.form-box input{
-    height: 60px;
-}
-.form-box textarea{
-    height: 100%;
-}
-.small textarea{
-    max-height: 80px;
-}
-.form-box, .small{
-    height: 100%;
-}
-.big-text{
+.box{
     width: 100%;
     height: 100%;
+}
+.content-mold{
+    height: 100%;
+    width: 100%;
+}
 
+.content-mold img{
+    width: 100%;
+}
+.card-form{
+    width: 70%;
+    height: 70%;
+}
+.left,
+.right{
+    width: 50%;
+    height: 100%;
+}
+.card-body{
+    min-height: 150px;
+}
+.dashboard .left img{
+    width: 50%;
 }
 .content-coments{
     width: 100%;
-}
-.coment-info button{
-    width: 30px;
-    height: 30px;
 
 }
-.coment-info{
+.form-box textarea{
     width: 100%;
-    height: 100%;
-}
-#rows-for-content{
-    height: 100%;
-    min-height: 150px;
-}
-
-/*login*/
-.m-card-log-reg
-{
-    width: 100%;
-    height: 100%;
-}
-.card-conteiner-right,
-.card-conteiner-left{
-    width: 50%;
-    height: 100%;
-}
-.box-log-reg{
-    width: 100%;
-    max-width: 500px;
-    padding: 50px;
-}
-.item-log-reg input{
-    width: 100%;
-    height: 40px;
-    min-width: 400px;
-}
-.card-conteiner-left img{
-    width: 80%;
-}
-
-.flex-colum img{
-    width: 100%;
-    border-radius: 10%;
-    height: 200px;
-}
-
-.item-number{
-    width: 40px;
-    height: 40px;
-}
-
-@media only screen and (max-width: 750px) {
-    .card-conteiner-left{
-        display: none;
-    }
-    input{
-        max-width: 50px;
-        margin: 0;
-        padding: 0;
-        max-width: 50px;
-    }
+    min-width: 800px;
 }

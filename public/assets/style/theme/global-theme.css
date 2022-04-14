@@ -6,82 +6,74 @@
     --neutrall:#baefed;
     --neutrallLight:#e3edf6;
     --grey:#868679;
-
 }
-h1{
+h1, h2{
     color: var(--light);
 }
-.header{
+#header{
     background-color: var(--light);
 
 }
-.header a{
+#header a{
     color: #fff;
 }
-.header a:hover{
+#header a:hover{
     color: var(--harmony);
     font-size: 2rem;
 }
-.container{
-
-}
-.search-item input{
-    background-color: var(--neutrall);
-    box-shadow:  1px 1px 10px var(--medium);
-}
-.form-box  input,
-.form-box textarea{
-   border: 1px solid var(--light);
-}
-.search-item button,
-.m-icons-up-del button{
-    background-color: transparent;
-}
-.box-item{
-    background-color: var(--neutrall);
-}
-.text-card{
-
-}
-.m-icons-up-del{
-    background-color: #4a2c4e;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-.btn{
-    background-color: var(--light);
-    color: var(--neutrallLight);
-}
-.btn a{
-    color: var(--neutrallLight);
-}
-.footer{
+#footer{
     background-color: var(--strong);
     color: var(--neutrallLight);
 }
-#change-border:target{
-    border: 1px solid yellow;
+.dashboard{
+    box-shadow:  1px 1px 10px var(--grey);
+    background-color: var(--neutrallLight);
+}
+.dashboard .left{
+
+}
+.search input{
+    background-color: var(--neutrall);
+}
+.search input{
+    background-color: var(--neutrall);
+    box-shadow:  1px 1px 10px var(--medium);
 }
 .coment-info{
     background-color: rgb(240, 230, 230);
     box-shadow:  1px 1px 10px var(--grey);
 }
-.log-reg{
+
+.content-mold{
     background: linear-gradient(90deg, rgb(86, 83, 146) 0%, rgb(88, 88, 194) 35%, rgb(114, 114, 252) 100%);
 }
-.card-conteiner-right{
-    background-color: var(--light);
-}
-.card-conteiner-left{
-    background-color: #fff;
-}
-.box-log-reg{
+.card-form{
     background-color: var(--neutrall);
 }
-.item-log-reg input{
+.card-form-footer button{
+    background-color: var(--light);
+    color: #fff;
+}
+.item-form input{
     border: 1px solid var(--harmony);
 }
-.item-number{
-    box-shadow:  1px 1px 10px var(--light);
-    color: var(--light);
+.item-form input:focus{
+    border: 1px solid var(--light);
+}
+.search button,
+.box-grid button{
+    background-color: transparent;
+}
+.card-footer{
+    background-color: var(--light);
+}
+/*cores*/
+.neutrallLight{
+    background-color: var(--neutrallLight);
+}
+.neutrall{
+    background-color: var(--neutrall);
+}
+.light{
+    background-color: var(--light);
 }

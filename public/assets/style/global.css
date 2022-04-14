@@ -1,0 +1,93 @@
+/*base*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 130px;
+}
+.header ul{
+    width: 100%;
+    height: 100%;
+}
+.body-content{
+    width: 100%;
+    margin-top: 130px;
+}
+.btn{
+    height: 60px;
+}
+.big{
+    width: 230px;
+}
+.max{
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    height: 260px;
+}
+
+/*dashbord*/
+
+
+img{
+    width: 30px;
+}
+
+
+/*formulário*/
+
+.form-box{
+    width: 100%;
+}
+.footer-form-box{
+    width: 100%;
+}
+.form-box input, textarea, label{
+    width: 100%;
+}
+.form-box input{
+    height: 60px;
+}
+.form-box textarea{
+    height: 100%;
+}
+.small textarea{
+    max-height: 80px;
+}
+.form-box, .small{
+    height: 100%;
+}
+.big-text{
+    width: 100%;
+    height: 100%;
+
+}
+.content-coments{
+    width: 100%;
+}
+.coment-info button{
+    width: 30px;
+    height: 30px;
+
+}
+.coment-info{
+    width: 100%;
+    height: 100%;
+}
+#rows-for-content{
+    height: 100%;
+    min-height: 150px;
+}
+
+
+/*module*/
+
+

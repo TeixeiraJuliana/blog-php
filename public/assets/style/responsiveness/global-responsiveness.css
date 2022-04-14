@@ -1,0 +1,57 @@
+/*dashboard*/
+@media only screen and (max-width: 750px) {
+    #app{
+        margin: 0;
+    }
+    #header,
+    #footer{
+        display: none;
+    }
+    .container{
+        margin: 0;
+        padding: 10px 0px;
+    }
+    .dashboard{
+
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .box{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .left,
+    .right{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .dashboard .box-grid,
+    .box-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex: none;
+        scroll-snap-align: start;
+    }
+    .card{
+        padding:15px;
+        align-items: center;
+    }
+    .content-mold .right,
+    .card-form{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    .content-mold  .left{
+        display: none;
+    }
+    .item-form input{
+        min-width: 250px;
+    }
+}
+
