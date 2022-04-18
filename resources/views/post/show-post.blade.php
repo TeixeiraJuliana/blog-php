@@ -2,7 +2,7 @@
 @section('content')
 @section('title', $post->title)
 <div class="container">
-    <div class="card purple shadow-cont" style="max-width: 95%">
+    <div class="card neutrall shadow-cont">
         <span>{{ $post->content}}</span>
     </div>
     <h1>Comentários</h1>
