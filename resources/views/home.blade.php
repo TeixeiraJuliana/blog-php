@@ -4,8 +4,6 @@
 @section('title', 'Dashboard')
 <div class="box dashboard">
     <div class="left">
-        <h2>Ferramentas</h2>
-
     </div>
     <div class="right">
         <div class="box">
@@ -21,14 +19,13 @@
         @else
         <h1>Artigos cadastrados</h1>
         @endif
-        <div>
 
         @if ((count($posts) == 0 && $search))
         <p> Nenhum resultado para: <strong>{{$search}}</strong></p>
         @elseif (count($posts) == 0)
         <p>Não há artigos cadastrados   </p>
         @endif
-        <h2>Artigos cadastrados</h2>
+
         <div class="box-grid">
                 @foreach ($posts as  $post)
                     <div class="card neutrall">

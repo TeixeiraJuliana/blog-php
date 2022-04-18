@@ -8,15 +8,19 @@
         display: none;
     }
     .container{
+        display: block;
+        padding: 0;
         margin: 0;
-        padding: 10px 0px;
+        height: auto;
+    }
+    .container h1{
+        margin: 30px 0px 30px 0px;
+        text-align: center;
     }
     .dashboard{
-
         margin: 0;
         padding: 0;
         flex-direction: column;
-        margin-bottom: 20px;
     }
     .box{
         margin: 0;
@@ -28,10 +32,11 @@
         height: 100%;
         width: 100%;
         margin: 0;
-        margin-bottom: 10px;
+
     }
     .dashboard .box-grid,
-    .box-grid{
+    .box-grid
+    {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         flex: none;
@@ -40,6 +45,7 @@
     .card{
         padding:15px;
         align-items: center;
+
     }
     .content-mold .right,
     .card-form{
@@ -50,7 +56,7 @@
     .content-mold  .left{
         display: none;
     }
-    .item-form input{
+    .item-form input, .item-form  textarea{
         min-width: 250px;
     }
 }

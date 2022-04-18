@@ -1,9 +1,8 @@
 @extends('layouts.main')
 @section('content')
-<div class="container">
+<div class="container cad">
     <div class="card-form">
     @if (Request::is('*/edit'))
-
         <h1>Alterar artigo</h1>
         <form action="/post/update/{{ $post->id }}" method="POST">
             @csrf
