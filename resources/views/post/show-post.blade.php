@@ -2,7 +2,7 @@
 @section('content')
 @section('title', $post->title)
 <div class="container">
-    <div class="card neutrall shadow-cont">
+    <div class="card neutrall shadow-cont" style="padding: 50px;  text-align: center">
         <span>{{ $post->content}}</span>
     </div>
     <h1>Comentários</h1>
