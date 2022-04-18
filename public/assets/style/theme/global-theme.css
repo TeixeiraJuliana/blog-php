@@ -54,12 +54,13 @@ h1, h2{
     background-color: var(--light);
     color: #fff;
 }
-.item-form input{
+.item-form input, textarea{
     border: 1px solid var(--harmony);
 }
 .item-form input:focus{
     border: 1px solid var(--light);
 }
+
 .search button,
 .box-grid button{
     background-color: transparent;
@@ -76,4 +77,7 @@ h1, h2{
 }
 .light{
     background-color: var(--light);
+}
+a{
+    color: #fff;
 }

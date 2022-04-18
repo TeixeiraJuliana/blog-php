@@ -45,8 +45,6 @@ class PostController extends Controller
     public function show($id){
         $post = Post::findOrFail($id);
 
-        $post->visits +=1;
-        $post->save();
 
         return view('post.show-post', ['post' => $post]);
     }

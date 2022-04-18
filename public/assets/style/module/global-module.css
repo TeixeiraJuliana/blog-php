@@ -39,11 +39,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .content-mold{
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 0;
 }
 .content-mold .left,
 .right{
