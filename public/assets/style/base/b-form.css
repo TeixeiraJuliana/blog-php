@@ -6,9 +6,10 @@
 .item-form textarea{
     width: 100%;
     min-width: 1200px;
-    padding: 15px;
+
 }
 .card-form-footer button{
     width: 100%;
     height: 60px;
 }
+

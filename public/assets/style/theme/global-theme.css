@@ -10,6 +10,9 @@
 h1, h2{
     color: var(--light);
 }
+a{
+    color: #fff;
+}
 #header{
     background-color: var(--light);
 
@@ -29,9 +32,6 @@ h1, h2{
     box-shadow:  1px 1px 10px var(--grey);
     background-color: var(--neutrallLight);
 }
-.dashboard .left{
-
-}
 .search input{
     background-color: var(--neutrall);
 }
@@ -39,13 +39,12 @@ h1, h2{
     background-color: var(--neutrall);
     box-shadow:  1px 1px 10px var(--medium);
 }
-.coment-info{
+.text-column{
     background-color: rgb(240, 230, 230);
     box-shadow:  1px 1px 10px var(--grey);
 }
-
-.content-mold{
-    background: linear-gradient(90deg, rgb(86, 83, 146) 0%, rgb(88, 88, 194) 35%, rgb(114, 114, 252) 100%);
+.message button{
+    background-color: #4a2c4e;
 }
 .card-form{
     background-color: var(--neutrall);
@@ -78,6 +77,9 @@ h1, h2{
 .light{
     background-color: var(--light);
 }
-a{
-    color: #fff;
+.purple{
+    background-color: rgb(240, 230, 230);
+}
+.shadow-cont{
+    box-shadow:  1px 1px 10px var(--grey)
 }

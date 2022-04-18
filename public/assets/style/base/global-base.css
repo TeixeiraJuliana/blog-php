@@ -48,11 +48,6 @@ img{
 .dashboard .left img{
     width: 50%;
 }
-.content-coments{
+.show{
     width: 100%;
-
-}
-.form-box textarea{
-    width: 100%;
-    min-width: 800px;
 }

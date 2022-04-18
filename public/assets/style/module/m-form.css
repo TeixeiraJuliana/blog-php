@@ -37,3 +37,13 @@
     margin-top: 10px;
     border: none;
 }
+.show{
+    justify-content: flex-end;
+    align-items:flex-end;
+    flex-direction: column;
+    padding: 15px;
+}
+.show h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
