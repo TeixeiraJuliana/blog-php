@@ -5,39 +5,7 @@
 <div class="box dashboard">
     <div class="left">
         <h2>Ferramentas</h2>
-        <div class="card">
-            <h1>Mais acessados</h1>
-            @foreach ($posts as  $post)
-                @if ($post->visits > 5)
-                <div>
-                <p> {{$post->title}}</p>
-                <strong>{{$post->visits}} acessos</strong>
-                </div>
-                @endif
-            @endforeach
-        </div>
-        <div class="card">
-            <h1>Total de usuários:</h1>
-            @foreach ($user as $usuario)
-            <div>
-            {{$usuario->name}}
-            </div>
-            @endforeach
-        </div>
-        <div class="card">
-            <h2>Total de artigos:</h2>
-            <div class="dash-item">
-                <p>{{$posts->count()}}</p>
-                <img src="./assets/image/pessoa.jpg" alt="">
-                </div>
-        </div>
-        <div class="card">
-            <h2>Usuários Cadastrados:</h2>
-            <div class="dash-item">
-                <p>{{$user->count()}}</p>
-                <img src="./assets/image/pessoa.jpg" alt="">
-            </div>
-        </div>
+
     </div>
     <div class="right">
         <div class="box">
@@ -60,7 +28,6 @@
         @elseif (count($posts) == 0)
         <p>Não há artigos cadastrados   </p>
         @endif
-
         <h2>Artigos cadastrados</h2>
         <div class="box-grid">
                 @foreach ($posts as  $post)
