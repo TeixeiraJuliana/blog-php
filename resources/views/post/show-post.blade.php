@@ -20,7 +20,7 @@
                         <button  class="btn" type="submit"><img src="" alt=""><img src="../assets/image/trash.svg" alt=""></button>
                     </form>
                     @endif
-                </div>
+                </div>zxzxzx
             </div>
         @empty
         </div>
