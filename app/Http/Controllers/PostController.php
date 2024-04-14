@@ -36,7 +36,7 @@ class PostController extends Controller
 
         return response()->json([
             "status" => 201,
-            "message" => "student record created",
+            "message" => "Sucesso",
             "payload" => [
                 "users_Name" => $users,
                 "posts" =>  $posts
