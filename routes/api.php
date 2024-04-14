@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request)  {
     return $request->user();
+});
+
+// Route::group(['prefix' => '/api'], function () use ($router) {
+//     $router->post('/posts', [App\Http\Controllers\PostController::class, 'store']);
+// });
+
+Route::group([], function () use ($router) {
+    $router->post('/posts', [App\Http\Controllers\PostController::class, 'store']);
+    $router->get('/posts', [App\Http\Controllers\PostController::class, 'getAllPosts']);
 });

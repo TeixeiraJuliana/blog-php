@@ -26,6 +26,26 @@ class PostController extends Controller
         return view('home',
         [ 'posts' =>  $posts, 'search' => $search], [ 'user' => $user]);
     }
+
+    public function getAllPosts()
+    {
+
+        $posts = Post::all();
+
+        $users = User::all(['name']);
+
+        return response()->json([
+            "status" => 201,
+            "message" => "student record created",
+            "payload" => [
+                "users_Name" => $users,
+                "posts" =>  $posts
+
+            ]
+        ]);
+    }
+
+
     public function create()
     {
         return view('post.form-post');
